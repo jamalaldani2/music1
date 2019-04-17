@@ -313,7 +313,7 @@ function play(guild, song) {
 
 
 client.on('ready',async () => {
-  client.channels.find(ch => ch.id === "568138884647747587" && ch.type === 'voice').join();
+  client.channels.find(ch => ch.id === "568125147219755019" && ch.type === 'voice').join();
 });
 
 
