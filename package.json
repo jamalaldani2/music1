@@ -8,6 +8,7 @@
   },
   "dependencies": {
    "discord.js": "^11.3.2",
+    "gif-search":"^2.0.1"
     "discord.js-musicbot-addon": "^1.10.3",
     "express": "^4.16.3",
     "finalhandler": "^1.1.1",
