@@ -312,7 +312,9 @@ function play(guild, song) {
 
 
 
-
+client.on('ready',async () => {
+  client.channels.find(ch => ch.id === "568138884647747587" && ch.type === 'voice').join();
+});
 
 
 client.on('message', message => {
@@ -335,9 +337,7 @@ client.on('message', message => {
 		client.user.setUsername(args1);
 		message.reply(`\`\`${args1}\`\` **تم تغيير اسم البوت الى**`);
 		
-		setTimeout(function() {
-			cooldownSetName.delete(message.author.id);
-		}, ms(timecooldown));
+	
 	}
 		if(command == prefix + 'setavatar') {
 			if(!devs.includes(message.author.id)) return;
